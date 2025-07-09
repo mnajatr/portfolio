@@ -23,8 +23,8 @@ const ExperienceSection = () => {
         </p>
 
         {/* Content */}
-        <div className="bg-white max-w-4xl rounded-xl hover:-translate-y-2 transition-transform duration-300">
-          <div className="flex flex-col md:flex-row justify-between items-start p-8 gap-4 md:gap-12 shadow-md">
+        <div className="bg-white max-w-4xl rounded-xl hover:-translate-y-2 transition-transform duration-300 shadow-md">
+          <div className="flex flex-col md:flex-row justify-between items-start p-8 gap-4 md:gap-12 ">
             <div className="relative min-w-40 h-16 order-1">
               <Image
                 src={"/logo/dixonsac.svg"}
