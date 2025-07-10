@@ -1,7 +1,9 @@
+import Navbar from "@/components/sections/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/sections/Navbar";
+import ReactQueryProvider from "@/components/providers/ReactQueryProvider";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
+        <ReactQueryProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Toaster richColors />
+        </ReactQueryProvider>
       </body>
     </html>
   );
